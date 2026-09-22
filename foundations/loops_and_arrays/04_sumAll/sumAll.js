@@ -14,6 +14,8 @@ const result = (Array.from({length: b - a + 1}, (_, index) => index + a));
 const total = result.reduce((accumulator, currentValue) => {
     return accumulator + currentValue;
 }, 0)
+
+return total;
 };
 
 // Do not edit below this line
