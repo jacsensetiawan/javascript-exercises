@@ -3,6 +3,9 @@ if (typeof a !== "number" || typeof b !== "number") {
     return "ERROR";
 }
 
+if (!Number.isInteger(a) || !Number.isInteger(b)) {
+    return "ERROR";
+}
 
 let max;
 let min;
