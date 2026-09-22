@@ -1,4 +1,9 @@
 const sumAll = function(a, b) {
+if (typeof a !== "number" || typeof b !== "number") {
+    return "ERROR";
+}
+
+
 let max;
 let min;
 
