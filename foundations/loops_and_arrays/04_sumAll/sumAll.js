@@ -1,5 +1,16 @@
 const sumAll = function(a, b) {
-const result = (Array.from({lenght: b - a + 1}, (_, index) => index + a));
+let max;
+let min;
+
+if (a < b) {
+    max = b;
+    min = a;
+} else {
+    max = a;
+    min = b;
+};
+
+const result = (Array.from({length: b - a + 1}, (_, index) => index + a));
 const total = result.reduce((accumulator, currentValue) => {
     return accumulator + currentValue;
 }, 0)
