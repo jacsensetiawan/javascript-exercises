@@ -10,7 +10,7 @@ if (a < b) {
     min = b;
 };
 
-const result = (Array.from({length: b - a + 1}, (_, index) => index + a));
+const result = (Array.from({length: max - min + 1}, (_, index) => index + min));
 const total = result.reduce((accumulator, currentValue) => {
     return accumulator + currentValue;
 }, 0)
