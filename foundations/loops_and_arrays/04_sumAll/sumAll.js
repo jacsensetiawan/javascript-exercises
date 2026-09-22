@@ -1,4 +1,5 @@
-const sumAll = function() {
+const sumAll = function(a, b) {
+const result = (Array.from({lenght: b - a + 1}, (_, index) => index + a));
 
 };
 
