@@ -30,8 +30,12 @@ const power = function(base, exponent) {
   return total;
 };
 
-const factorial = function() {
-	
+const factorial = function(number) {
+	total = 1
+  for(let i = 1; i <= number; i++) {
+    total = total * i;
+  }
+  return total;
 };
 
 // Do not edit below this line
