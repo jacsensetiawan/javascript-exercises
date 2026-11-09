@@ -24,7 +24,7 @@ const multiply = function(numbers) {
 
 const power = function(base, exponent) {
 	let total = 1
-  for(let i = 1; i < exponent; i++) {
+  for(let i = 0; i < exponent; i++) {
     total = total * base;
   }
   return total;
